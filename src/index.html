@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Snapfit.js (javascript jigsaw puzzle functionality for images)</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<script type="text/javascript" src="snapfit.js"></script>
+</head>
+<body>
+<h2>Demonstration</h2>
+
+<div class="demo"><div style="outline: 1px solid silver"><img id="mole" onload="snapfit.add(this,{callback: function() {alert('You solved the puzzle!');}, aborder:true, aimage:true, polygon:true, space:20});" src="./assets/mole.png" width="320" height="320" border="0" alt="girl" /></div>
+<strong>Level</strong>
+
+<button type="button" onclick="snapfit.admix(document.getElementById('mole'));">Admix</button>
+<button type="button" onclick="snapfit.solve(document.getElementById('mole'));">Solve</button><br>
+</div>
+</body>
+</html>
