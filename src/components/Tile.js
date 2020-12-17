@@ -1,5 +1,4 @@
 import * as React from 'react';
-import mole from '../assets/mole.png'
 import Draggable from 'react-draggable'
 export class Tile extends React.Component {
 
@@ -7,20 +6,25 @@ export class Tile extends React.Component {
     super(props);
     this.state={
       name: this.props.name,
-      imageLoc: this.props.imageLoc
+      imageLocX: this.props.imageLocX,
+      imageLocY: this.props.imageLocY
     }
   }
 
   handleStop = (event) => {
-    console.log(this.state)
     console.log("gestopt")
+    this.setState({
+      imageLocX: event.screenX,
+      imageLocY: event.screenY
+    })
+    console.log(this.state)
   }
 
   render() {
     return (
       <Draggable
         onStop={this.handleStop}>
-        <div className={this.props.className} onClick={this.props.onClick}>
+        <div className={this.props.className}>
         </div>
       </Draggable>
     )

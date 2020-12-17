@@ -11,12 +11,12 @@ export class App extends React.Component {
       <>
 
 
-          <div class="container mt-5">
-            <div class="row">
-              <div class="col-md">
+          <div className="container mt-5">
+            <div className="row">
+              <div className="col-md">
                 <CardComponent name="mole" imageUri={mole}/>
               </div>
-              <div class="col-md">
+              <div className="col-md">
                 <CardComponent name="grass" imageUri={grass}/>
               </div>
               <div class="col-md">
@@ -25,15 +25,15 @@ export class App extends React.Component {
             </div>
           </div>
 
-          <div class="container mt-5">
-            <div class="row">
-              <div class="col-md">
+          <div className="container mt-5">
+            <div className="row">
+              <div className="col-md">
                 <CardComponent name="mole" imageUri={mole}/>
               </div>
-              <div class="col-md">
+              <div className="col-md">
                 <CardComponent name="grass" imageUri={grass}/>
               </div>
-              <div class="col-md">
+              <div className="col-md">
                 <CardComponent name="mole" imageUri={mole}/>
               </div>
             </div>

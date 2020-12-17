@@ -1,6 +1,5 @@
 import * as React from 'react'
 import mole from '../assets/mole.png'
-import {Helmet} from 'react-helmet'
 import Button from 'react-bootstrap/Button'
 import snapFitFunction1 from '../snapfit.js'
 

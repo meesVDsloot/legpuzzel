@@ -10,6 +10,7 @@ export default class Routes extends Component {
         return (
             <Router history={history}>
                 <Switch>
+                    <Route path="/" exact component={HomePage}/>
                     <Route path="/home" exact component={HomePage}/>
                     <Route path="/puzzels/" exact component={App} />
                     <Route path="/gekozenPuzzel/puzzelName=:name" exact component={Puzzel} />

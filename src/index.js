@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import Routes from './Routes'
 
-import { App } from './components/App'
 import Header from './components/Header'
 
 const legPuzzel =
